@@ -1,0 +1,41 @@
+Concert	
+	id_Concert
+	artist name (varchar)
+	date and time(datetime) rango de tiempo
+	image_url (varchar)
+	description (varchar)
+	empty_spaces (int) *Trigger
+	price (decimal)
+
+User
+	id_User
+	name (varchar)
+	email (varchar)
+
+Ticket
+	ID_Ticket
+	ID_Concert
+	ID_Sale
+	place
+	number_row
+	seat
+	price
+
+Sale
+	Id_User
+	date and time
+
+Details_Sale
+	Id_Sale
+	Id_Ticket
+
+
+//Vistas//////
+
+Propiedades Calculadas
+	avalaible_spaces
+	number_tickets
+	total_price
+	
+	
+	
