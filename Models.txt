@@ -14,20 +14,20 @@ User
 
 Ticket
 	ID_Ticket
-	ID_Concert
-	ID_Sale
+	ID_Concert //Llave foranea
+	ID_Sale //Llave foranea
 	place
 	number_row
 	seat
 	price
 
 Sale
-	Id_User
+	Id_User //Llave foranea
 	date and time
 
 Details_Sale
-	Id_Sale
-	Id_Ticket
+	Id_Sale //Llave foranea
+	Id_Ticket //Llave foranea
 
 
 //Vistas//////
