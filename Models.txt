@@ -32,6 +32,24 @@ Details_Sale
 
 //Vistas//////
 
+View_Concert
+	id_Concert
+	artist name (varchar)
+	date and time(datetime) rango de tiempo
+	image_url (varchar)
+	description (varchar)
+	avalaible_spaces (int)
+	ocuped_spaces (SUM Id_tickes by Id_Concert)
+	real_spaces (avalaible_spaces - ocuped_spaces)
+	price (decimal)
+
+View_Sale
+	Id_User //Llave foranea
+	date and time
+	number_tickets (SUM id_ticket by Id_Details_Sale by Id_Sale)
+	total_price (number_tickets * price by Id_Ticket by Id_Details_Sale)
+	
+	
 Propiedades Calculadas
 	avalaible_spaces
 	number_tickets
